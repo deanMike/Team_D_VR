@@ -13,6 +13,7 @@ public class LoadGame : MonoBehaviour {
 	    if (gameObject.GetComponent<Renderer>().material.color.Equals(Color.red))
         {
             variables.loadGame = true;
+            GameObject.Find("OVRPlayerController").transform.position = new Vector3(1366, -1500, -18716);
         }
 	}
 }
