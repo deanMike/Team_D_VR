@@ -106,6 +106,8 @@ public class OVRPlayerController : MonoBehaviour
 	{
 		Controller = gameObject.GetComponent<CharacterController>();
 
+        DontDestroyOnLoad(gameObject);
+
 		if(Controller == null)
 			Debug.LogWarning("OVRPlayerController: No CharacterController attached.");
 
