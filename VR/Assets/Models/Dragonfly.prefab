@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 424776}
   - 33: {fileID: 3380632}
   - 23: {fileID: 2392794}
-  - 64: {fileID: 6462170}
   - 114: {fileID: 11437998}
+  - 65: {fileID: 6531446}
   m_Layer: 0
   m_Name: Dragonfly
   m_TagString: Projectile
@@ -62,8 +62,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111586}
   m_Mesh: {fileID: 4300004, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
---- !u!64 &6462170
-MeshCollider:
+--- !u!65 &6531446
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -72,8 +72,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300004, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
+  m_Size: {x: .0237938501, y: .00795003772, z: .0274954289}
+  m_Center: {x: -.0015603411, y: .000152919907, z: .000806544442}
 --- !u!114 &11437998
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,7 +12,7 @@ public class Look : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        warning = GameObject.Find("Warning").GetComponent<Renderer>().material.color;
+        //warning = GameObject.Find("Warning").GetComponent<Renderer>().material.color;
         variables = GameObject.Find("Variables").GetComponent<VariableController>();
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
@@ -21,7 +21,7 @@ public class Look : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         MakeRed(new Ray(cam.transform.position, cam.transform.forward));
-        FlashWarning();
+        //FlashWarning();
 
     }
 
