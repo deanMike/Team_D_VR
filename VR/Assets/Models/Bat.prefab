@@ -10,9 +10,8 @@ GameObject:
   - 4: {fileID: 456598}
   - 33: {fileID: 3396234}
   - 23: {fileID: 2312230}
-  - 114: {fileID: 11428032}
-  - 82: {fileID: 8220540}
-  - 65: {fileID: 6570222}
+  - 65: {fileID: 6598438}
+  - 114: {fileID: 11466450}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Projectile
@@ -42,7 +41,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: cfc01b90771998a4e8c8a429a17d0deb, type: 2}
+  - {fileID: 2100000, guid: 57dd55db4053de74b92f1a1ec2803d92, type: 2}
+  - {fileID: 2100000, guid: b9a174bac856ae24fb6ff90119aca312, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -63,7 +63,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121534}
   m_Mesh: {fileID: 4300000, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
---- !u!65 &6570222
+--- !u!65 &6598438
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -73,79 +73,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .0219284128, y: .0248402189, z: .0209682975}
-  m_Center: {x: .00234361715, y: -.00302037806, z: .00273638079}
---- !u!82 &8220540
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121534}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &11428032
+  m_Size: {x: .0219284128, y: .0248402189, z: .0209682696}
+  m_Center: {x: .00234361622, y: -.00302037713, z: .00273638824}
+--- !u!114 &11466450
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

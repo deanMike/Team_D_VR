@@ -262,6 +262,10 @@ Prefab:
       propertyPath: sounds.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: 2b6c641e3844cef4ea5c05158780e65e, type: 3}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: HmdRotatesY
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
   m_IsPrefabParent: 0
@@ -857,7 +861,7 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.28999996
+  m_Intensity: 1.24000001
   m_Range: 10000
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1264,6 +1268,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - {fileID: 8300000, guid: 140273940a249564397c415bb85f440c, type: 3}
-  - {fileID: 8300000, guid: 1e934c4a8f2ca5e48b1305406e1f2e4b, type: 3}
-  - {fileID: 8300000, guid: 2b6c641e3844cef4ea5c05158780e65e, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

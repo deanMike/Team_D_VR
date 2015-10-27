@@ -95,6 +95,11 @@ ModelImporter:
     100174: Right_Torch_4
     100176: Torch_Holder
     100178: Vase
+    100180: pasted__pasted__Torch_Holder1
+    100182: pasted__pasted__Torch_Holder2
+    100184: pasted__Torch_Holder1
+    100186: pasted__Torch_Holder2
+    100188: pasted__Torch_Holder3
     400000: Back_Wall
     400002: Background
     400004: Basket
@@ -185,6 +190,11 @@ ModelImporter:
     400174: Right_Torch_4
     400176: Torch_Holder
     400178: Vase
+    400180: pasted__pasted__Torch_Holder1
+    400182: pasted__pasted__Torch_Holder2
+    400184: pasted__Torch_Holder1
+    400186: pasted__Torch_Holder2
+    400188: pasted__Torch_Holder3
     2300000: Back_Wall
     2300002: Background
     2300004: Basket
@@ -245,6 +255,11 @@ ModelImporter:
     2300114: Right_Torch_4
     2300116: Torch_Holder
     2300118: Vase
+    2300120: pasted__pasted__Torch_Holder1
+    2300122: pasted__pasted__Torch_Holder2
+    2300124: pasted__Torch_Holder1
+    2300126: pasted__Torch_Holder2
+    2300128: pasted__Torch_Holder3
     3300000: Back_Wall
     3300002: Background
     3300004: Basket
@@ -305,6 +320,11 @@ ModelImporter:
     3300114: Right_Torch_4
     3300116: Torch_Holder
     3300118: Vase
+    3300120: pasted__pasted__Torch_Holder1
+    3300122: pasted__pasted__Torch_Holder2
+    3300124: pasted__Torch_Holder1
+    3300126: pasted__Torch_Holder2
+    3300128: pasted__Torch_Holder3
     4300000: Ceiling
     4300002: Back_Wall
     4300004: Background
@@ -365,6 +385,11 @@ ModelImporter:
     4300114: pasted__pasted__Torch_Holder
     4300116: Basket
     4300118: Vase
+    4300120: pasted__Torch_Holder1
+    4300122: pasted__Torch_Holder2
+    4300124: pasted__Torch_Holder3
+    4300126: pasted__pasted__Torch_Holder1
+    4300128: pasted__pasted__Torch_Holder2
     9500000: //RootNode
   materials:
     importMaterials: 1

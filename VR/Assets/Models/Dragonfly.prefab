@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 424776}
   - 33: {fileID: 3380632}
   - 23: {fileID: 2392794}
-  - 114: {fileID: 11437998}
-  - 65: {fileID: 6531446}
+  - 65: {fileID: 6550642}
+  - 114: {fileID: 11491166}
   m_Layer: 0
   m_Name: Dragonfly
   m_TagString: Projectile
@@ -25,7 +25,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111586}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: -.31596908, w: .94876951}
   m_LocalPosition: {x: -.0271883681, y: .0344183519, z: .0879717395}
   m_LocalScale: {x: 1, y: 5.33950996, z: 1}
   m_Children: []
@@ -41,7 +41,9 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: cfc01b90771998a4e8c8a429a17d0deb, type: 2}
+  - {fileID: 2100000, guid: de13b996bda2e214381832558d705c59, type: 2}
+  - {fileID: 2100000, guid: f088cc9e7706a1345a6315b4d4e37ec7, type: 2}
+  - {fileID: 2100000, guid: bc2d16ca9a06de54588e2bca50ca695d, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -62,7 +64,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111586}
   m_Mesh: {fileID: 4300004, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
---- !u!65 &6531446
+--- !u!65 &6550642
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -72,9 +74,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .0237938501, y: .00795003772, z: .0274954289}
-  m_Center: {x: -.0015603411, y: .000152919907, z: .000806544442}
---- !u!114 &11437998
+  m_Size: {x: .0237938389, y: .00854757149, z: .0274954457}
+  m_Center: {x: -.00156034669, y: -.000145847429, z: .000806528144}
+--- !u!114 &11491166
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
