@@ -28,6 +28,7 @@ using System.Collections.Generic;
 [RequireComponent(typeof(CharacterController))]
 public class OVRPlayerController : MonoBehaviour
 {
+
 	/// <summary>
 	/// The rate acceleration during movement.
 	/// </summary>
@@ -100,6 +101,7 @@ public class OVRPlayerController : MonoBehaviour
 		var p = CameraRig.transform.localPosition;
 		p.z = OVRManager.profile.eyeDepth;
 		CameraRig.transform.localPosition = p;
+
 	}
 
 	void Awake()

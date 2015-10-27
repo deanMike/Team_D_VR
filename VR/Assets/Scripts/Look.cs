@@ -7,33 +7,21 @@ public class Look : MonoBehaviour {
     float t = 0;
     float duration = 3;
     VariableController variables;
+    public AudioClip[] sounds = new AudioClip[3];
+    Color warning;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
+        warning = GameObject.Find("Warning").GetComponent<Renderer>().material.color;
         variables = GameObject.Find("Variables").GetComponent<VariableController>();
-        cam = Camera.main;
-        RaycastHit hit;
-        Ray ray = new Ray(cam.transform.position, cam.transform.forward);
-
-        if (Physics.Raycast(ray, out hit))
-        {
-            Transform objectHit = hit.transform;
-            objectHit.transform.SendMessage("Petrify");
-            objectHit.GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.red, t);
-            if (t < 1)
-            { // while t below the end limit...
-              // increment it at the desired rate every update:
-                t += Time.deltaTime / duration;
-            }
-            // Do something with the object that was hit by the raycast.
-        }
+        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        cam = Camera.main;
         MakeRed(new Ray(cam.transform.position, cam.transform.forward));
+        FlashWarning();
 
     }
 
@@ -47,6 +35,10 @@ public class Look : MonoBehaviour {
 
             if (objectHit.tag.Equals("Projectile")) {
                 objectHit.SendMessage("Petrify");
+                gameObject.GetComponent<AudioSource>().clip = sounds[new System.Random().Next(0, 3)];
+                if (!gameObject.GetComponent<AudioSource>().isPlaying) {
+                    gameObject.GetComponent<AudioSource>().Play();
+                }
             }
 
             Debug.Log(objectHit.name);
@@ -61,5 +53,15 @@ public class Look : MonoBehaviour {
             // Do something with the object that was hit by the raycast.
         }
     }
+    public void FlashWarning() {
+        warning = new Color(warning.r, warning.g, warning.b, 127);
+
+        GameObject.Find("Warning").GetComponent<Renderer>().material.color = Color.Lerp(GameObject.Find("Warning").GetComponent<Renderer>().material.color, warning, t);
+        if (t <1) {
+            t += Time.deltaTime / duration;
+        }
+    }
+
+
 
 }
