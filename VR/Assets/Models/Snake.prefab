@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 439592}
   - 33: {fileID: 3311190}
   - 23: {fileID: 2344894}
-  - 64: {fileID: 6408436}
   - 114: {fileID: 11405354}
   - 82: {fileID: 8276224}
+  - 65: {fileID: 6557282}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Projectile
@@ -63,8 +63,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153944}
   m_Mesh: {fileID: 4300002, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
---- !u!64 &6408436
-MeshCollider:
+--- !u!65 &6557282
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -73,8 +73,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300002, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
+  m_Size: {x: .11529208, y: .0272802152, z: .0370895863}
+  m_Center: {x: -.0441705249, y: 1.90921128e-08, z: -.00653893081}
 --- !u!82 &8276224
 AudioSource:
   m_ObjectHideFlags: 1
