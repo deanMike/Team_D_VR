@@ -17,7 +17,6 @@ public class Freeze : MonoBehaviour {
         character = Camera.main.transform;
         transform.position = new Vector3(transform.position.x, character.position.y, transform.position.z);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(character.position.x, character.position.y + 30, character.position.z + 5), Time.deltaTime * speed);
-        Debug.Log(speed);
     }
     public void Petrify() {
         if (speed > 0) {
