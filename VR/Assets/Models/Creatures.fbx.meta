@@ -9,10 +9,12 @@ ModelImporter:
     100002: //RootNode
     100004: Dragonfly
     100006: Snake
+    100008: camera1
     400000: Bat
     400002: //RootNode
     400004: Dragonfly
     400006: Snake
+    400008: camera1
     2300000: Bat
     2300002: Dragonfly
     2300004: Snake

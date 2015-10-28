@@ -186,6 +186,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6437892, guid: 86ad9064d94f2f843916a7e3a7ff77ea, type: 2}
+    - {fileID: 6570222, guid: 86ad9064d94f2f843916a7e3a7ff77ea, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 86ad9064d94f2f843916a7e3a7ff77ea, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &768095382 stripped
