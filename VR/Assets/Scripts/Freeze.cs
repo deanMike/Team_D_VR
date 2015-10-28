@@ -14,11 +14,12 @@ public class Freeze : MonoBehaviour {
         sound = gameObject.GetComponent<AudioSource>();
         variables = GameObject.Find("Variables").GetComponent<VariableController>();
         speed = variables.projectileSpeed;
+        character = Camera.main.transform;
     }
 
     // Update is called once per frame
     void Update() {
-        character = Camera.main.transform;
+        
         transform.position = new Vector3(transform.position.x, character.position.y, transform.position.z);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(character.position.x, character.position.y + 30, character.position.z + 200), Time.deltaTime * speed);
         if (transform.position.Equals(new Vector3(character.position.x, character.position.y + 30, character.position.z + 200))) {

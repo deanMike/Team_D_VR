@@ -15,6 +15,7 @@ public class Look : MonoBehaviour {
         //warning = GameObject.Find("Warning").GetComponent<Renderer>().material.color;
         variables = GameObject.Find("Variables").GetComponent<VariableController>();
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        DontDestroyOnLoad(gameObject);
 
     }
 	
@@ -22,7 +23,7 @@ public class Look : MonoBehaviour {
 	void Update () {
         MakeRed(new Ray(cam.transform.position, cam.transform.forward));
         //FlashWarning();
-
+        DontDestroyOnLoad(gameObject);
     }
 
     public void MakeRed(Ray ray)
