@@ -21,8 +21,8 @@ public class Freeze : MonoBehaviour {
     void Update() {
         
         transform.position = new Vector3(transform.position.x, character.position.y, transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(character.position.x, character.position.y + 30, character.position.z + 200), Time.deltaTime * speed);
-        if (transform.position.Equals(new Vector3(character.position.x, character.position.y + 30, character.position.z + 200))) {
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(character.position.x, character.position.y, character.position.z + 1), Time.deltaTime * speed);
+        if (transform.position.Equals(new Vector3(character.position.x, character.position.y, character.position.z + 1))) {
             Destroy(gameObject);
         }
     }

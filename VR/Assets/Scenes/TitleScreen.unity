@@ -223,7 +223,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2015248, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: far clip plane
@@ -490,7 +490,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c3447fb972ae6054db63c2745a92c64a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 502ce91d12e545d44850440f3da2fa48, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .389999986
   m_Pitch: 1
@@ -567,7 +567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &500131647
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1453,6 +1453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b3e168c8304d1dc40a8a67939483900b, type: 3}
+  - {fileID: 8300000, guid: 4130b12438b86d74d808c5b3c3ceee86, type: 3}
+  - {fileID: 8300000, guid: 90a7a2826deff9749bd0f468ca64a4dc, type: 3}
