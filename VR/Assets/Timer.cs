@@ -21,6 +21,7 @@ public class Timer : MonoBehaviour {
             timerObj.text = ((int)timer).ToString();
             if (timer <= 0) {
                 timer = 0;
+                Application.LoadLevel(2);
             }
         }
 	}

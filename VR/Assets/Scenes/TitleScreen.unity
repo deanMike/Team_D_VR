@@ -575,7 +575,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 500131646}
   m_LocalRotation: {x: -.0130418595, y: 2.53402688e-10, z: -1.53392188e-09, w: .999914944}
-  m_LocalPosition: {x: 0, y: 0, z: 165}
+  m_LocalPosition: {x: 0, y: 0, z: 165.800003}
   m_LocalScale: {x: 85.1715546, y: 24.2655144, z: 24.2655144}
   m_Children:
   - {fileID: 1212636669}
@@ -583,7 +583,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: 113}
+  m_AnchoredPosition: {x: -0, y: 83}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &500131648
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ef44066d95989478b4c98be6d5d99e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 30
+  gameTime: 2
   numProjectiles: 0
   loadGame: 0
   projectileSpeed: 10
@@ -1456,3 +1456,16 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b3e168c8304d1dc40a8a67939483900b, type: 3}
   - {fileID: 8300000, guid: 4130b12438b86d74d808c5b3c3ceee86, type: 3}
   - {fileID: 8300000, guid: 90a7a2826deff9749bd0f468ca64a4dc, type: 3}
+--- !u!114 &2030783246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2030783243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73a6142cb347c64ca1d8b9560e5ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFOV: 150
+  Speed: 1

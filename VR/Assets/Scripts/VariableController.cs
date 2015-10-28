@@ -23,6 +23,9 @@ public class VariableController : MonoBehaviour {
             loadGame = false;
             Application.LoadLevel(1);
             Panel.SetActive(true);
+        } 
+        if (Application.loadedLevel.Equals(2)) {
+            Panel.SetActive(false);
         }
 	}
 }

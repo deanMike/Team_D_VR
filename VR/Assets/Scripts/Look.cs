@@ -24,6 +24,10 @@ public class Look : MonoBehaviour {
         MakeRed(new Ray(cam.transform.position, cam.transform.forward));
         //FlashWarning();
         DontDestroyOnLoad(gameObject);
+        if (Application.loadedLevel == 2) {
+            transform.position = new Vector3(0, 1.8f, 1.5f);
+            transform.rotation = new Quaternion(0, 0, 0, transform.rotation.w);
+        }
     }
 
     public void MakeRed(Ray ray)
