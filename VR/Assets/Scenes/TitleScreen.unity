@@ -223,7 +223,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2015248, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: far clip plane
@@ -296,6 +296,10 @@ Prefab:
     - target: {fileID: 14300000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_StepOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015248, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: field of view
+      value: 106.188774
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
@@ -575,15 +579,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 500131646}
   m_LocalRotation: {x: -.0130418595, y: 2.53402688e-10, z: -1.53392188e-09, w: .999914944}
-  m_LocalPosition: {x: 0, y: 0, z: 165.800003}
-  m_LocalScale: {x: 85.1715546, y: 24.2655144, z: 24.2655144}
+  m_LocalPosition: {x: 0, y: 0, z: 166.300003}
+  m_LocalScale: {x: 29.1466732, y: 24.2655144, z: 24.2655144}
   m_Children:
   - {fileID: 1212636669}
   m_Father: {fileID: 116007622}
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: 83}
+  m_AnchoredPosition: {x: -64.6999969, y: 63.5999985}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &500131648
@@ -958,15 +962,15 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1212636668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.44989991e-07}
-  m_LocalScale: {x: .00584207056, y: .019122947, z: .66152221}
+  m_LocalRotation: {x: 1.49011576e-08, y: 0, z: 1.11889638e-16, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0170715265, y: .019122947, z: .66152221}
   m_Children: []
   m_Father: {fileID: 500131647}
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -0, y: -.0199999996}
+  m_AnchoredPosition: {x: 0, y: -.0200042725}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1212636670

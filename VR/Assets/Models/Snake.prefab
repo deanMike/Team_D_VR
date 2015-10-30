@@ -12,6 +12,8 @@ GameObject:
   - 23: {fileID: 2344894}
   - 114: {fileID: 11499062}
   - 82: {fileID: 8268224}
+  - 54: {fileID: 5476074}
+  - 65: {fileID: 6529512}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Projectile
@@ -62,6 +64,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153944}
   m_Mesh: {fileID: 4300002, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
+--- !u!54 &5476074
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153944}
+  serializedVersion: 2
+  m_Mass: 15
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6529512
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .115292288, y: .0272802114, z: .0370895863}
+  m_Center: {x: -.0441706292, y: 1.81607902e-08, z: -.00653893081}
 --- !u!82 &8268224
 AudioSource:
   m_ObjectHideFlags: 1
@@ -168,6 +197,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: Pan2D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

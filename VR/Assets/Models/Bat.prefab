@@ -13,6 +13,7 @@ GameObject:
   - 65: {fileID: 6598438}
   - 114: {fileID: 11466450}
   - 82: {fileID: 8203232}
+  - 54: {fileID: 5459176}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Projectile
@@ -64,6 +65,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121534}
   m_Mesh: {fileID: 4300000, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
+--- !u!54 &5459176
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121534}
+  serializedVersion: 2
+  m_Mass: 20
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &6598438
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -179,6 +195,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: Loop
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Mass
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
