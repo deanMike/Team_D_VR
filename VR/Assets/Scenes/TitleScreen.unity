@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ef44066d95989478b4c98be6d5d99e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 2
+  gameTime: 30
   numProjectiles: 0
   loadGame: 0
   projectileSpeed: 10

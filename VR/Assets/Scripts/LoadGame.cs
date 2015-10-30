@@ -16,8 +16,7 @@ public class LoadGame : MonoBehaviour {
 	    if (gameObject.GetComponent<Renderer>().material.color.Equals(Color.red))
         {
             variables.loadGame = true;
-            player.transform.position = new Vector3(1.26f, 0.31f, 18.5f);
-            player.transform.localRotation = new Quaternion(player.transform.localRotation.x, player.transform.localRotation.y + 180, player.transform.localRotation.z, player.transform.localRotation.w);
+            player.transform.position = new Vector3(1.26f, 0.31f, -18.5f);
         }
 	}
 }
