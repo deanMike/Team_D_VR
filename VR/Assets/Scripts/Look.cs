@@ -1,26 +1,24 @@
 ﻿using UnityEngine;
-using System.Collections;
+
 //Mike Dean - Script to change color of object when looked at.
 public class Look : MonoBehaviour {
-
-    Camera cam;
-    float t = 0;
-    float duration = 3;
-    VariableController variables;
+    private Camera cam;
+    private float t = 0;
+    private float duration = 3;
+    private VariableController variables;
     public AudioClip[] sounds = new AudioClip[3];
-    Color warning;
+    private Color warning;
 
     // Use this for initialization
-    void Start () {
+    private void Start() {
         //warning = GameObject.Find("Warning").GetComponent<Renderer>().material.color;
         variables = GameObject.Find("Variables").GetComponent<VariableController>();
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         DontDestroyOnLoad(gameObject);
-
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    private void Update() {
         MakeRed(new Ray(cam.transform.position, cam.transform.forward));
         //FlashWarning();
         DontDestroyOnLoad(gameObject);
@@ -30,12 +28,9 @@ public class Look : MonoBehaviour {
         }
     }
 
-    public void MakeRed(Ray ray)
-    {
-        
+    public void MakeRed(Ray ray) {
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
+        if (Physics.Raycast(ray, out hit)) {
             Transform objectHit = hit.transform;
 
             if (objectHit.tag.Equals("Projectile")) {
@@ -48,25 +43,26 @@ public class Look : MonoBehaviour {
 
             Debug.Log(objectHit.name);
             if (objectHit.tag.Equals("Look") || objectHit.tag.Equals("Projectile")) {
-                objectHit.GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.red, t);
-                if (t < 1)
-                { // while t below the end limit...
-                  // increment it at the desired rate every update:
+                if (objectHit.name.Substring(0).Equals("S")) {
+                    objectHit.GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.green, t);
+                } else {
+                    objectHit.GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.red, t);
+                }
+                if (t < 1) { // while t below the end limit...
+                             // increment it at the desired rate every update:
                     t += Time.deltaTime / duration;
                 }
             }
             // Do something with the object that was hit by the raycast.
         }
     }
+
     public void FlashWarning() {
         warning = new Color(warning.r, warning.g, warning.b, 127);
 
         GameObject.Find("Warning").GetComponent<Renderer>().material.color = Color.Lerp(GameObject.Find("Warning").GetComponent<Renderer>().material.color, warning, t);
-        if (t <1) {
+        if (t < 1) {
             t += Time.deltaTime / duration;
         }
     }
-
-
-
 }
