@@ -7,15 +7,13 @@ public class VariableController : MonoBehaviour {
     public float projectileSpeed = 100;
     private GameObject Panel;
     private Transform DFPos;
+    public int numBat, numDragonfly, numSnakes;
 
     // Use this for initialization
     private void Start() {
         DontDestroyOnLoad(gameObject);
         Panel = GameObject.Find("Panel");
         Panel.SetActive(false);
-        if (Application.loadedLevel.Equals(1)) {
-            DFPos = GameObject.Find("DragonFly").GetComponent<Transform>();
-        }
     }
 
     // Update is called once per frame
@@ -28,14 +26,6 @@ public class VariableController : MonoBehaviour {
         if (Application.loadedLevel.Equals(2)) {
             Panel.SetActive(false);
         }
-        //if (Application.loadedLevel.Equals(1)) {
-        //    for (int i = 0; i < 5; i++) {
-        //        Invoke("SpawnDragonfly", 2.0f);
-        //    }
-        //}
     }
 
-    public void SpawnDragonfly() {
-        //	Instantiate (Dragonfly, DFPos.position, DFPos.rotation);
-    }
 }

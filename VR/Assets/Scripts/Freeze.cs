@@ -14,15 +14,13 @@ public class Freeze : MonoBehaviour {
         speed = variables.projectileSpeed;
         character = Camera.main.transform;
         objTrans = gameObject.transform;
-
     }
 
     // Update is called once per frame
     private void Update() {
-        //transform.position = new Vector3(transform.position.x, character.position.y, transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(character.position.x * (float)(new System.Random().NextDouble()), character.position.y * (float)(new System.Random().NextDouble()), character.position.z + 1), Time.deltaTime * speed);
-        if (transform.position.Equals(new Vector3(character.position.x, character.position.y, character.position.z + 1))) {
-            Destroy(gameObject);
+        transform.localPosition = Vector3.MoveTowards(transform.position, new Vector3(character.position.x, character.position.y, character.position.z + 1), Time.deltaTime * speed);
+        if (transform.localPosition.Equals(new Vector3(character.position.x, character.position.y, character.position.z))) {
+            DestroyObj();
         }
     }
 
@@ -35,16 +33,26 @@ public class Freeze : MonoBehaviour {
             //rigid.mass = 1;
             //rigid.mass *= 1000;
             rigid.useGravity = true;
+            Debug.Log(gameObject.name.Substring(0));
             Invoke("DestroyObj", 3);
         }
     }
 
     public void DestroyObj() {
         Destroy(gameObject);
+        Debug.Log(gameObject.name.Substring(0,1));
+        switch (gameObject.name.Substring(0,1)) {
+            case "S":
+                variables.numSnakes++;
+                break;
+            case "D":
+                variables.numDragonfly++;
+                break;
+            case "B":
+                variables.numBat++;
+                break;
+            default:
+                break;
+        }
     }
 }
-
-//Pseudo Code
-/*
-While an object is being looked at (Raycast hit), slow down until it stops.
-*/
