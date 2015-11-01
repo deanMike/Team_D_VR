@@ -39,6 +39,8 @@ public class Look : MonoBehaviour {
                 if (!gameObject.GetComponent<AudioSource>().isPlaying) {
                     gameObject.GetComponent<AudioSource>().Play();
                 }
+            } else {
+                gameObject.GetComponent<AudioSource>().Stop();
             }
 
             Debug.Log(objectHit.name);

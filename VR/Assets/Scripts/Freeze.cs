@@ -6,6 +6,7 @@ public class Freeze : MonoBehaviour {
     private float speed;
     private AudioSource sound;
     private Transform objTrans;
+    public AudioClip[] sounds;
 
     // Use this for initialization
     private void Start() {
