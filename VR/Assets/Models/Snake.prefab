@@ -11,6 +11,9 @@ GameObject:
   - 33: {fileID: 3311190}
   - 23: {fileID: 2344894}
   - 114: {fileID: 11499062}
+  - 82: {fileID: 8268224}
+  - 54: {fileID: 5476074}
+  - 65: {fileID: 6529512}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Projectile
@@ -24,9 +27,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153944}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.00607770681, y: .0265573356, z: .0538455658}
-  m_LocalScale: {x: .561383843, y: .28858003, z: .432213336}
+  m_LocalRotation: {x: -.0178090315, y: .806479752, z: -.0243231189, w: .590492666}
+  m_LocalPosition: {x: .147824168, y: 1.96657419, z: 21.5303402}
+  m_LocalScale: {x: 5.96564484, y: 3.06664634, z: 4.59298515}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,6 +64,103 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153944}
   m_Mesh: {fileID: 4300002, guid: dd423f17a15c0bc4fb12f179be53287b, type: 3}
+--- !u!54 &5476074
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153944}
+  serializedVersion: 2
+  m_Mass: 15
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6529512
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .115292288, y: .0272802114, z: .0370895863}
+  m_Center: {x: -.0441706292, y: 1.81607902e-08, z: -.00653893081}
+--- !u!82 &8268224
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153944}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 122e06e6a8a734949947e4fdd8934a21, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11499062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -72,6 +172,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2b10455e870af4ab96a060f5b47627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: 122e06e6a8a734949947e4fdd8934a21, type: 3}
+  - {fileID: 8300000, guid: 2cc87b850845cfa4c884caaa3960f3d8, type: 3}
+  - {fileID: 8300000, guid: 6b227cdc871b93f408b6a6df29d98b2e, type: 3}
+  - {fileID: 8300000, guid: ebee576024037a948b402a2c09ca478b, type: 3}
+  - {fileID: 8300000, guid: c5f3a368af3a8fa43b779f31f4036758, type: 3}
+  - {fileID: 8300000, guid: 4ed0962a435777c43afd41fea3217097, type: 3}
+  - {fileID: 8300000, guid: eb570c6eec61d3040b8142be72d337a1, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -79,6 +187,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -90,7 +202,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 9bb126a12bc962c469325fa059ab7618, type: 3}
+      objectReference: {fileID: 8300000, guid: 122e06e6a8a734949947e4fdd8934a21, type: 3}
     - target: {fileID: 0}
       propertyPath: Loop
       value: 1
@@ -99,6 +211,46 @@ Prefab:
       propertyPath: Pan2D
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 122e06e6a8a734949947e4fdd8934a21, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2cc87b850845cfa4c884caaa3960f3d8, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b227cdc871b93f408b6a6df29d98b2e, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: ebee576024037a948b402a2c09ca478b, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: c5f3a368af3a8fa43b779f31f4036758, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ed0962a435777c43afd41fea3217097, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: eb570c6eec61d3040b8142be72d337a1, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153944}
