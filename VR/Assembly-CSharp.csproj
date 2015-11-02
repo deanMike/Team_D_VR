@@ -97,6 +97,9 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRTrackerBounds.cs" />
      <Compile Include="Assets\Scripts\ColorFade.cs" />
      <Compile Include="Assets\Scripts\Freeze.cs" />
+     <Compile Include="Assets\Scripts\Freeze2.cs" />
+     <Compile Include="Assets\Scripts\Instantiate.cs" />
+     <Compile Include="Assets\Scripts\Instantiate2.cs" />
      <Compile Include="Assets\Scripts\LoadGame.cs" />
      <Compile Include="Assets\Scripts\Look.cs" />
      <Compile Include="Assets\Scripts\Reticle.cs" />

@@ -29,35 +29,36 @@ public class Look : MonoBehaviour {
     }
 
     public void MakeRed(Ray ray) {
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit)) {
-            Transform objectHit = hit.transform;
+		RaycastHit hit;
+		if (Physics.Raycast (ray, out hit)) {
+			Transform objectHit = hit.transform;
 
-            if (objectHit.tag.Equals("Projectile")) {
-                objectHit.SendMessage("Petrify");
-                gameObject.GetComponent<AudioSource>().clip = sounds[new System.Random().Next(0, 3)];
-                if (!gameObject.GetComponent<AudioSource>().isPlaying) {
-                    gameObject.GetComponent<AudioSource>().Play();
-                }
-            } else {
-                gameObject.GetComponent<AudioSource>().Stop();
-            }
+			if (objectHit.tag.Equals ("Projectile")) {
+				objectHit.SendMessage ("Petrify");
+				gameObject.GetComponent<AudioSource> ().clip = sounds [new System.Random ().Next (0, 3)];
+				if (!gameObject.GetComponent<AudioSource> ().isPlaying) {
+					gameObject.GetComponent<AudioSource> ().Play ();
+				}
+			} else {
+				gameObject.GetComponent<AudioSource> ().Stop ();
+			}
 
-            Debug.Log(objectHit.name);
-            if (objectHit.tag.Equals("Look") || objectHit.tag.Equals("Projectile")) {
-                if (objectHit.name.Substring(0).Equals("S")) {
-                    objectHit.GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.green, t);
-                } else {
-                    objectHit.GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.red, t);
-                }
-                if (t < 1) { // while t below the end limit...
-                             // increment it at the desired rate every update:
-                    t += Time.deltaTime / duration;
-                }
-            }
-            // Do something with the object that was hit by the raycast.
-        }
-    }
+			Debug.Log (objectHit.name);
+			if (objectHit.tag.Equals ("Look")) {
+				if (objectHit.name.Substring (0).Equals ("S")) {
+					objectHit.GetComponent<Renderer> ().material.color = Color.Lerp (Color.white, Color.green, t);
+				} else {
+					objectHit.GetComponent<Renderer> ().material.color = Color.Lerp (Color.white, Color.red, t);
+				}
+				if (t < 1) { // while t below the end limit...
+					// increment it at the desired rate every update:
+					t += Time.deltaTime / duration;
+				}
+
+				// Do something with the object that was hit by the raycast.
+			}
+		}
+	}
 
     public void FlashWarning() {
         warning = new Color(warning.r, warning.g, warning.b, 127);

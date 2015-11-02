@@ -789,13 +789,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ef44066d95989478b4c98be6d5d99e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 30
-  numProjectiles: 0
+  gameTime: 60
   loadGame: 0
   projectileSpeed: 10
-  numBat: 2
-  numDragonfly: 2
-  numSnakes: 2
+  numBat: 1
+  numDragonfly: 1
+  numSnakes: 1
+  numBat2: 1
+  numDragonfly2: 1
+  numSnakes2: 1
 --- !u!1 &779705382
 GameObject:
   m_ObjectHideFlags: 0

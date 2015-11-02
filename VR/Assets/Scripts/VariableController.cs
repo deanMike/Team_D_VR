@@ -2,12 +2,11 @@
 
 public class VariableController : MonoBehaviour {
     public float gameTime;
-    public int numProjectiles;
     public bool loadGame = false;
     public float projectileSpeed = 100;
     private GameObject Panel;
     private Transform DFPos;
-    public int numBat, numDragonfly, numSnakes;
+	public int numBat, numDragonfly, numSnakes, numBat2, numDragonfly2, numSnakes2;
 
     // Use this for initialization
     private void Start() {
