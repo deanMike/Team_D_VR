@@ -55,7 +55,8 @@ public class Freeze2 : MonoBehaviour {
 	
 	public void Petrify() {
 		if (speed > 1) {
-			speed -= speed / 2;
+			//speed -= speed / 2;
+			speed = 0;
 		} else {
 			speed = 0;
 			Rigidbody rigid = gameObject.GetComponent<Rigidbody>();
@@ -81,21 +82,21 @@ public class Freeze2 : MonoBehaviour {
 		switch (gameObject.name.Substring (0, 1)) {
 		case "S":
 			//if ((even % 7) == 0){
-			for (int i = -1; i < (secElapsed / 6); i++) {
+			for (int i = -1; i < (secElapsed / 20); i++) {
 				variables.numSnakes2++;
 			//}
 		}
 			break;
 		case "D":
 			//if ((even % 7) == 0){
-			for (int i = -1; i < (secElapsed / 6); i++){
+			for (int i = -1; i < (secElapsed / 20); i++){
 			variables.numDragonfly2++;
 				}
 			//}
 			break;
 		case "B":
 			//if ((even % 7) == 0){
-			for (int i = -1; i < (secElapsed / 6); i++){
+			for (int i = -1; i < (secElapsed / 20); i++){
 			variables.numBat2++;
 					}
 			//	}
