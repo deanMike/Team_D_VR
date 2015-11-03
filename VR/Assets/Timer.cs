@@ -19,7 +19,7 @@ public class Timer : MonoBehaviour {
 	void Update () {
         if (Application.loadedLevel == 1) {
             timer -= Time.deltaTime;
-            timerObj.text = ((int)timer).ToString();
+            timerObj.text = "Time Remaining: " + ((int)timer).ToString();
             if (timer <= 0) {
                 timer = 0;
                 Application.LoadLevel(2);
