@@ -301,6 +301,10 @@ Prefab:
       propertyPath: field of view
       value: 106.188774
       objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
+      propertyPath: m_Height
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
   m_IsPrefabParent: 0
@@ -580,7 +584,7 @@ RectTransform:
   m_GameObject: {fileID: 500131646}
   m_LocalRotation: {x: -.0130418595, y: 2.53402688e-10, z: -1.53392188e-09, w: .999914944}
   m_LocalPosition: {x: 0, y: 0, z: 166.300003}
-  m_LocalScale: {x: 157.756363, y: 24.2655144, z: 24.2655144}
+  m_LocalScale: {x: 244.015564, y: 37.5336075, z: 37.5336075}
   m_Children:
   - {fileID: 1212636669}
   m_Father: {fileID: 116007622}
@@ -602,7 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: .39199999}
+  m_Color: {r: 1, g: 1, b: 1, a: .640999973}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

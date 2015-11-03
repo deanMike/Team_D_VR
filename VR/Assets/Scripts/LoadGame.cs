@@ -17,7 +17,7 @@ public class LoadGame : MonoBehaviour {
         {
             variables.loadGame = true;
             player.transform.position = new Vector3(1.26f, 0.31f, -18.5f);
-            player.transform.rotation.eulerAngles.Set(0, 70, 0);
+            player.transform.eulerAngles = new Vector3(0, 55, 0);
         }
 	}
 }
