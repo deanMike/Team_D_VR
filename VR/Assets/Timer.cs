@@ -4,8 +4,9 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
     private VariableController variables;
-    private float timer;
+    public float timer;
     private Text timerObj;
+	private int secElapsed;
 
     // Use this for initialization
 	void Start () {

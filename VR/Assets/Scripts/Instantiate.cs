@@ -26,6 +26,7 @@ public class Instantiate : MonoBehaviour {
 		spawnLoc = new Vector3 (Random.Range (-1.67F, 4.0F), Random.Range (-.06f, 3.2f) , 20f);
         if (probability < 3 && variables.numDragonfly > 0) {
             Instantiate(Dragonfly, spawnLoc, startPoint.rotation);
+
             variables.numDragonfly--;
             Debug.Log("Dragonfly");
         } else if (probability < 6 && variables.numBat > 0) {

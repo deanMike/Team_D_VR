@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11491166}
   - 82: {fileID: 8231018}
   - 54: {fileID: 5495846}
+  - 111: {fileID: 11173874}
   m_Layer: 0
   m_Name: Dragonfly
   m_TagString: Projectile
@@ -163,6 +164,20 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!111 &11173874
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111586}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: f4cec915be9ba894ab6f24b06ecffd22, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &11491166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -191,6 +206,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: sounds.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Animations.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
@@ -240,6 +259,14 @@ Prefab:
       propertyPath: sounds.Array.data[5]
       value: 
       objectReference: {fileID: 8300000, guid: eb570c6eec61d3040b8142be72d337a1, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: f4cec915be9ba894ab6f24b06ecffd22, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_AnimatePhysics
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111586}

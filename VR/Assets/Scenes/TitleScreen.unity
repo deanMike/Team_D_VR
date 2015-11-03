@@ -792,12 +792,12 @@ MonoBehaviour:
   gameTime: 60
   loadGame: 0
   projectileSpeed: 10
-  numBat: 1
-  numDragonfly: 1
-  numSnakes: 1
-  numBat2: 1
-  numDragonfly2: 1
-  numSnakes2: 1
+  numBat: 0
+  numDragonfly: 2
+  numSnakes: 0
+  numBat2: 0
+  numDragonfly2: 2
+  numSnakes2: 0
 --- !u!1 &779705382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863d016c258031049a2b432a660b1b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
 --- !u!1 &1312157820
 GameObject:
   m_ObjectHideFlags: 0
