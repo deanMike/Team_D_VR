@@ -89,7 +89,7 @@ public class Freeze : MonoBehaviour {
 			break;
 		case "D":
 			//if ((even % 7) == 0){
-			for (int i = 0; i < (secElapsed / 40); i++){
+			for (int i = 0; i < (secElapsed / 20); i++){
 					variables.numDragonfly++;
 
 				}

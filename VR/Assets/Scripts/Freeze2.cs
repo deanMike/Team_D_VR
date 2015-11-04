@@ -75,31 +75,32 @@ public class Freeze2 : MonoBehaviour {
 	
 	public void DestroyObj() {
 		Destroy(gameObject);
-
+		
 		//even++;
-
-		//Debug.Log(gameObject.name.Substring(0,1));
+		
+		Debug.Log(gameObject.name.Substring(0,1));
 		switch (gameObject.name.Substring (0, 1)) {
 		case "S":
 			//if ((even % 7) == 0){
-			for (int i = -1; i < (secElapsed / 20); i++) {
-				variables.numSnakes2++;
+			for (int i = 0; i < (secElapsed / 20); i++) {
+				variables.numSnakes++;
+			}
 			//}
-		}
 			break;
 		case "D":
 			//if ((even % 7) == 0){
-			for (int i = -1; i < (secElapsed / 20); i++){
-			variables.numDragonfly2++;
-				}
+			for (int i = 0; i < (secElapsed / 20); i++){
+				variables.numDragonfly2++;
+				
+			}
 			//}
 			break;
 		case "B":
 			//if ((even % 7) == 0){
-			for (int i = -1; i < (secElapsed / 20); i++){
-			variables.numBat2++;
-					}
-			//	}
+			for (int i = 0; i < (secElapsed / 20); i++){
+				variables.numBat++;
+			}
+			//}
 			break;
 		default:
 			break;

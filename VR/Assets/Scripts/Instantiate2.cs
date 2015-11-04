@@ -10,15 +10,20 @@ public class Instantiate2 : MonoBehaviour {
 	private Vector3 spawnLoc;
 	private int probability;
 	private VariableController variables;
+
+
 	// Use this for initialization
 	void Start () {
 		spawn = new Vector3(0.0f, 2.0f, 20.0f);
 		variables = GameObject.Find("Variables").GetComponent<VariableController>();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		spawnFunc();
+
+	
 	}
 	
 	public void spawnFunc() {
