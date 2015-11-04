@@ -22,15 +22,17 @@ public class Freeze2 : MonoBehaviour {
 		speed = variables.projectileSpeed;
 		character = Camera.main.transform;
 		objTrans = gameObject.transform;
+
+		gameObject.transform.localEulerAngles = new Vector3 (340.7f, 189.5f, 266.3f);
 	}
 	
 	// Update is called once per frame
 	private void Update() {
 		secElapsed = Time.timeSinceLevelLoad;
-		transform.localPosition = Vector3.MoveTowards(transform.position, new Vector3(character.position.x + 0.5f, character.position.y, character.position.z), Time.deltaTime * speed);
-		if (transform.localPosition.Equals(new Vector3(character.position.x + 0.5f, character.position.y, character.position.z))) {
+		transform.localPosition = Vector3.MoveTowards(transform.position, new Vector3(character.position.x + 0.5f, Random.Range(-1.0f, 5.5f) - 2, Random.Range(-22, -13.5f)), Time.deltaTime * speed);
+		    if (transform.localPosition.x <= character.position.x + 1) {
 			DestroyObj();
-
+			
 			switch (gameObject.name.Substring (0, 1)) {
 			case "S":
 				//if ((even % 7) == 0){
@@ -49,15 +51,13 @@ public class Freeze2 : MonoBehaviour {
 				break;
 			default:
 				break;
-			}
+			} 
 		}
-	}
+		
+		}
 	
 	public void Petrify() {
-		if (speed > 1) {
-			//speed -= speed / 2;
-			speed = 0;
-		} else {
+			gameObject.GetComponent<Animation>().Stop();
 			speed = 0;
 			Rigidbody rigid = gameObject.GetComponent<Rigidbody>();
 			//rigid.mass = 1;
@@ -65,7 +65,7 @@ public class Freeze2 : MonoBehaviour {
 			rigid.useGravity = true;
 			//Debug.Log(gameObject.name.Substring(0));
 			gameObject.GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.red, t);
-		}
+
 		if (t < 1) { // while t below the end limit...
 			// increment it at the desired rate every update:
 			t += Time.deltaTime / duration;

@@ -23,11 +23,11 @@ public class Instantiate2 : MonoBehaviour {
 	
 	public void spawnFunc() {
 		probability = new System.Random().Next(0, 10);
-		spawnLoc = new Vector3 (41.77f, Random.Range (-.06f, 3.2f) , Random.Range (-24.53f, -18f));
+		spawnLoc = new Vector3 (41.77f, Random.Range (-.06f, 3.2f) , Random.Range (-21.25f, -17.45f));
 		if (probability < 3 && variables.numDragonfly2 > 0) {
 			Instantiate(Dragonfly, spawnLoc, startPoint.rotation);
 			variables.numDragonfly2--;
-			Debug.Log("Dragonfly");
+		//	Debug.Log("Dragonfly");
 		} else if (probability < 6 && variables.numBat2 > 0) {
 			Instantiate(Bat, spawnLoc, startPoint.rotation);
 			variables.numBat2--;
